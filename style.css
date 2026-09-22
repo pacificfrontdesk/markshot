@@ -1,0 +1,34 @@
+:root { color-scheme: light dark; }
+body {
+  margin: 0 auto; padding: 48px 24px 96px; max-width: 46rem;
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1E1F2B; background: #F4F3FB;
+}
+h1 { font-size: 1.9rem; letter-spacing: -0.01em; margin: 0 0 0.25rem; }
+h2 { font-size: 1.15rem; margin: 2.4rem 0 0.6rem; }
+.sub { color: #62647A; margin: 0 0 2.5rem; }
+.hero .sub { margin: 0.1rem 0 0; }
+ul { padding-left: 1.2rem; }
+li { margin: 0.35rem 0; }
+a { color: #4A4FE8; }
+kbd { font: 600 0.85em -apple-system, sans-serif; padding: 1px 6px; border-radius: 5px;
+      border: 1px solid #CFCDE3; background: #FFFFFF; }
+footer { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid #DAD8EA; color: #62647A; font-size: 0.92rem; }
+.hero { display: flex; align-items: center; gap: 20px; margin-bottom: 1.8rem; }
+.icon { width: 96px; height: 96px; border-radius: 22%; flex: 0 0 auto; box-shadow: 0 4px 14px rgba(40, 30, 120, 0.25); }
+.tagline { font-size: 1.3rem; font-weight: 650; margin: 0 0 0.5rem; }
+.cta { display: inline-block; margin: 1.1rem 0 0.4rem; padding: 12px 24px; border-radius: 999px;
+       background: linear-gradient(135deg, #3A48F5, #943AE6); color: #fff; font-weight: 600; text-decoration: none; }
+.cta.soon { background: transparent; color: #62647A; border: 1.5px solid #DAD8EA; cursor: default; }
+.shots { display: flex; gap: 16px; margin: 2rem -24px 0; padding: 6px 24px 18px; overflow-x: auto; scroll-snap-type: x mandatory; }
+.shots img { width: 420px; max-width: 85vw; height: auto; flex: 0 0 auto; border-radius: 10px; scroll-snap-align: start;
+             box-shadow: 0 6px 20px rgba(40, 30, 120, 0.18); }
+@media (prefers-color-scheme: dark) {
+  body { color: #ECECF4; background: #17171F; }
+  .sub, footer { color: #9A9CB3; }
+  footer { border-top-color: #2E2E3C; }
+  a { color: #8E93FF; }
+  kbd { border-color: #3A3A4C; background: #24242F; }
+  .cta.soon { color: #9A9CB3; border-color: #2E2E3C; }
+  .shots img { box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); }
+}
